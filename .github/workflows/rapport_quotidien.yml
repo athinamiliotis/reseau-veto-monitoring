@@ -1,0 +1,36 @@
+name: Rapport quotidien anomalies reseau
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # tous les jours à 6h00 UTC (8h00 heure de Paris en été)
+  workflow_dispatch:        # permet aussi de le lancer manuellement, à la demande
+
+permissions:
+  contents: write            # autorise le script à déposer le rapport dans le repo
+
+jobs:
+  generer-rapport:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le code du repo
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer les dépendances
+        run: pip install pandas
+
+      - name: Lancer le script de détection d'anomalies
+        run: python consolidation_anomalies.py
+
+      - name: Déposer le rapport dans le repo
+        run: |
+          git config user.name "Rapport automatique"
+          git config user.email "actions@github.com"
+          git add rapport_anomalies.txt
+          git commit -m "Rapport automatique du $(date +'%Y-%m-%d')" || echo "Rien à mettre à jour"
+          git push
