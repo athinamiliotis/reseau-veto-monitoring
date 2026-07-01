@@ -18,7 +18,7 @@ import pandas as pd
 from datetime import datetime
 
 # --- Paramètres ---
-DOSSIER_EXPORTS = "exports_cliniques"
+DOSSIER_EXPORTS = "exports_cliniques_mai2026"
 FICHIER_RAPPORT = "rapport_anomalies.txt"
 SEUIL_ECART_TYPE = 2  # nombre d'écarts-types au-delà duquel un jour est jugé anormal
 
