@@ -1,6 +1,6 @@
 ============================================================
 RAPPORT DE DÉTECTION D'ANOMALIES - RÉSEAU VÉTÉRINAIRE
-Généré le : 2026-07-23 08:22
+Généré le : 2026-07-24 08:18
 ============================================================
 
 7 anomalie(s) détectée(s) :
@@ -9,8 +9,8 @@ Généré le : 2026-07-23 08:22
 - Clinique Vétérinaire Puteaux : chute d'activité le 13/05/2026 (5 rdv, moyenne habituelle 30 rdv en semaine)
 - Clinique Vétérinaire Rueil-Malmaison : pic d'activité le 15/05/2026 (42 rdv, moyenne habituelle 32 rdv en semaine)
 - Clinique Vétérinaire Levallois : chute d'activité le 19/05/2026 (23 rdv, moyenne habituelle 31 rdv en semaine)
-- Clinique Vétérinaire Neuilly : pic d'activité le 27/05/2026 (76 rdv, moyenne habituelle 53 rdv en semaine)
 - Clinique Vétérinaire Saint-Cloud : pic d'activité le 27/05/2026 (22 rdv, moyenne habituelle 17 rdv en semaine)
+- Clinique Vétérinaire Neuilly : pic d'activité le 27/05/2026 (76 rdv, moyenne habituelle 53 rdv en semaine)
 - Clinique Vétérinaire Colombes : pic d'activité le 29/05/2026 (22 rdv, moyenne habituelle 17 rdv en semaine)
 
 ------------------------------------------------------------
